@@ -2,6 +2,7 @@
 
 A basic captcha bypass proof-of-concept script.
 <br>
+<br>
 <img src="https://raw.githubusercontent.com/NodePoint/Basic-Captcha-Bypass-PoC/master/demo.png" style="max-width:100%;" alt="Demo of PoC">
 
 ## About
