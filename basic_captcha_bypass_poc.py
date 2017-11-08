@@ -35,6 +35,8 @@ releaseloop = False
 success = False
 sessionexists = False
 
+hdr = {'Content-Type':'application/x-www-form-urlencoded','Referer':protocolinput+'://'+hostinput+registerpath} # default header
+
 # have new captcha code set
 print('[info] requesting captcha ...')
 try:
@@ -67,7 +69,6 @@ try:
     else:
         # failed to obtain session id -- fallback
         print('[warn] session id not found -- this may fail if captcha relies on it')
-        hdr = {'Content-Type':'application/x-www-form-urlencoded','Referer':protocolinput+'://'+hostinput+registerpath}
 except KeyError:
     print('[warn] session id not found -- this may fail if captcha relies on it')
 
